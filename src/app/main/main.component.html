@@ -1,0 +1,6 @@
+<div class="main" >
+  <app-view-edit [isEdit]="false"  *ngFor="let todo of todoList" [content]="todo"></app-view-edit>
+
+  <app-view-edit *ngIf="isAdd" (onComplete)="complete($event)"></app-view-edit>
+  <app-addtodo (click)="onAdd()"></app-addtodo>
+</div>

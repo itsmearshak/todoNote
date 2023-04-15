@@ -1,0 +1,9 @@
+<div class="board">
+    <ng-template #view>
+        <div class="content">{{content}}</div>
+    </ng-template>
+   
+    <div class="input"   *ngIf="isEdit ; else view"   (keydown.enter)="onEnter()" >
+        <textarea [(ngModel)]="todoValue"></textarea>
+    </div>
+</div>

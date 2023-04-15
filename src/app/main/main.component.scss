@@ -1,0 +1,8 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 10px;
+}
